@@ -3,8 +3,7 @@ public class linkedlist1st {
     private Node tail;
     private int size;
     public linkedlist1st(){
-        this.size = 0;
-    }
+        this.size = 0;}
 
     private void insert(int val){
         Node node = new Node(val);
@@ -18,7 +17,7 @@ public class linkedlist1st {
     public void display(){
         Node temp = head;
         while(temp!=null){
-            System.out.println(temp.val+" -> ");
+            System.out.print(temp.val+" -> ");
             temp = temp.next;
         }
         System.out.println("End");
