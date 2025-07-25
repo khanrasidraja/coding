@@ -1,17 +1,15 @@
 import java.util.*;
 public class linkedlist3 {
-
     class Node{
         int val;
         Node next;
         public Node(int val) {
-            this.val = val;
+           this.val = val;
         }
         public Node(int val, Node next) {
             this.val = val;
             this.next = next;
-        }
-        
+        }   
     }
 
     static Node head;
@@ -37,7 +35,6 @@ public class linkedlist3 {
     }
 
     public void arraytoLinkedList(int[] arr, int n){
-    //   head = null;
       for(int i=n-1;i>=0;i--){
         head = insert(head, arr[i]);
       }

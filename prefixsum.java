@@ -12,6 +12,6 @@ public class prefixsum {
     public static void main(String[] args) {
         int[] nums = {1, 2, 3, 4, 5};
         // i ans = Arrays.toString(presum((nums)));
-        Syste.err.println(Arrays.toString(presum(nums)));
+        System.err.println(Arrays.toString(presum(nums)));
     }
 }
