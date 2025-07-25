@@ -46,12 +46,15 @@ public class linkedlist5 {
    }
 
    private static void removeNode(){
-       Node node = new Node(11);
+       Node node = new Node(5);
        Node temp = head;
-//       for(int i=1;i<){
-//           temp = temp.next;
-//       }
-       temp.next = temp.next.next;
+       Node prev = null;
+       while(temp.value!=node.value){
+           prev = temp;
+           temp = temp.next;
+       }
+       temp = prev;
+       temp.next=temp.next.next;
        size--;
    }
 
@@ -88,15 +91,17 @@ public class linkedlist5 {
         list.insert(13);
         Node node = new Node(5);
         list.display();
-        list.removeIndex(2);
-        display();
+//        list.removeIndex(2);
+//        display();
 //        list.deletelast();
 //        list.display();
 //        list.deletefirst();
 //        list.display();
 //        list.removeNode();
 //        list.display();
-        list.deletelast();
-        list.display();
+//        list.deletelast();
+//        list.display();
+        list.removeNode();
+        display();
     }
 }
