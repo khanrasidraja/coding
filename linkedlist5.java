@@ -46,7 +46,7 @@ public class linkedlist5 {
    }
 
    private static void removeNode(){
-       Node node = new Node(5);
+       Node node = new Node(11);
        Node temp = head;
        Node prev = null;
        while(temp.value!=node.value){
@@ -56,6 +56,7 @@ public class linkedlist5 {
        temp = prev;
        temp.next=temp.next.next;
        size--;
+
    }
 
    public static void display(){
